@@ -5,8 +5,13 @@ import logging
 
 app = func.FunctionApp()
 
+<<<<<<< HEAD
 @app.route(route="QueueFunction", auth_level=func.AuthLevel.ANONYMOUS)
 def QueueFunction(req: func.HttpRequest) -> func.HttpResponse:
+=======
+@app.route(route="SqlFunction", auth_level=func.AuthLevel.ANONYMOUS)
+def SqlFunction(req: func.HttpRequest) -> func.HttpResponse:
+>>>>>>> 4dadf3cfa0a0f61aca9ae2ffd3fc7bb80c6b43f4
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
