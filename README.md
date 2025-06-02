@@ -1,1 +1,0 @@
-# sql-function-lab
